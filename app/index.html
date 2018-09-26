@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PLP - product listing page</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- use quick bootstrap for layout  -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- load in my own atomic bem OOCSS styles later -->
+</head>
+
+<body>
+ 
+    <div class="col-12"> 
+        <h1> 94 results </h1>
+        <div id="products-container"></div>
+        <!-- hello world =====  contents from json gets dumped here -->
+      </div>   
+    
+
+  <script id="productsTemplate" type="text/x-handlebars-template">
+    <div class="card-columns">   
+        {{#each products}}
+         <div class="card product">
+          <div class="card-body product__body">
+            <img class="card-img-top" src="{{picture}}">
+            <div class="card-img-overlay">
+              <span data-fave="{{isFav}}">{{isFav}}</span>
+            </div> 
+            <div class="product__detail">
+            <a href="{{url}}" class="product__text__link">
+              <h6 class="card-title">{{name}}</h6>
+            </a>      
+            <p class="card-text">
+              <span>{{size}}</span>
+              <span data-rating="{{rating}}">{{rating}}</span>
+            </p>
+            <p class="card-text">
+              <span class="product__text__price">{{price}}</span>
+              <span class="product__text__oldprice">{{oldPrice}}</span>
+              <span class="product__text__savings">{{savings}}</span>
+            </p>            
+          </div> 
+          </div>  
+        <!-- end card body -->
+       <!--  end card -->
+        </div>
+      {{/each }}          
+      </div>   
+  </script>
+
+  <script type="text/javascript" src="/node_modules/handlebars/dist/handlebars.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

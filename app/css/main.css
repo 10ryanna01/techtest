@@ -1,0 +1,87 @@
+[data-fave="true"] {
+  background-image: url('../img/fave_on.svg');
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 1.5rem;
+  pointer-events: fill;
+  cursor: pointer;
+}
+[data-fave="false"] {
+  background-image: url('../img/fave_off.svg');
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 1.5rem;
+  pointer-events: fill;
+  cursor: pointer;
+}
+[data-rating="1"] {
+  background-image: url('../img/rating.svg');
+  background-repeat: repeat-x;
+  color: transparent;
+  background-size: 20px;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+[data-rating="2"] {
+  background-image: url('../img/rating.svg');
+  background-repeat: repeat-x;
+  color: transparent;
+  background-size: 20px;
+  margin-top: 5px;
+  padding-right: 30px;
+}
+[data-rating="3"] {
+  background-image: url('../img/rating.svg');
+  background-repeat: repeat-x;
+  color: transparent;
+  background-size: 20px;
+  margin-top: 5px;
+  padding-right: 50px;
+}
+[data-rating="4"] {
+  background-image: url('../img/rating.svg');
+  background-repeat: repeat-x;
+  color: transparent;
+  background-size: 20px;
+  margin-top: 5px;
+  padding-right: 70px;
+}
+[data-rating="5"] {
+  background-image: url('../img/rating.svg');
+  background-repeat: repeat-x;
+  color: transparent;
+  background-size: 20px;
+  margin-top: 5px;
+  padding-right: 90px;
+}
+.product__body {
+  padding: 0;
+}
+.product__body .card-img-overlay {
+  pointer-events: none;
+}
+.product__detail {
+  padding: 1.25rem;
+}
+.product__text__link {
+  color: #3a376b;
+}
+.product__text__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.0rem;
+}
+.product__text__savings {
+  color: #ec79a5;
+}
+.product__text__savings:before {
+  content: 'You save ';
+  color: #ec79a5;
+  display: inline;
+}
+.product__text__oldprice {
+  text-decoration: line-through;
+  color: #9896a4;
+}
